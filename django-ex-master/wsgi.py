@@ -34,7 +34,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
         # just send back the same data, but upper-cased
         self.request.sendall(self.data.upper())
         
-HOST, PORT = socket.gethostbyname(socket.gethostname()), 9999
+HOST, PORT = '0.0.0.0', 9999
 
 # Create the server, binding to localhost on port 9999
 server = SocketServer.TCPServer((HOST, PORT), MyTCPHandler)
