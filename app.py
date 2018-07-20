@@ -17,7 +17,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
         # just send back the same data, but upper-cased
         self.request.sendall(self.data.upper())
         
-HOST, PORT = os.environ["OPENSHIFT_PYTHON_IP"], int(os.environ["OPENSHIFT_PYTHON_PORT"])
+HOST, PORT = "0.0.0.0", 8080
 
 print("HELLO WORLD | ", HOST, " -> ", PORT)
 
