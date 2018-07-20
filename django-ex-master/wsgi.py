@@ -17,8 +17,6 @@ application = get_wsgi_application()
 '''
 import SocketServer, os, socket
 
-HAHAHA
-
 class MyTCPHandler(SocketServer.BaseRequestHandler):
     """
     The request handler class for our server.
