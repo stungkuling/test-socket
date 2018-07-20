@@ -36,6 +36,8 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
         
 HOST, PORT = '0.0.0.0', 9999
 
+print("HELLO WORLD")
+
 # Create the server, binding to localhost on port 9999
 server = SocketServer.TCPServer((HOST, PORT), MyTCPHandler)
 
