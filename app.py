@@ -19,6 +19,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
         
 HOST, PORT = "0.0.0.0", 8080
 
+print("IP IS: {}".format(socket.gethostbyname(socket.gethostname())))
 print("HELLO WORLD | ", HOST, " -> ", PORT)
 
 # Create the server, binding to localhost.
